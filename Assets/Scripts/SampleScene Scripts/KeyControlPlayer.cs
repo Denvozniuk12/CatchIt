@@ -19,13 +19,13 @@ public class KeyControlPlayer : MonoBehaviour
         if (!Player.lose)
         {
             float moveX = Input.GetAxis("Horizontal");
-            if (rb.position.x > 2.4f)
+            if (rb.position.x > 2.23f)
             {
-                player.position = new Vector3(2.4f, rb.position.y, 0);
+                player.position = new Vector3(2.23f, rb.position.y, 0);
             }
-            if (rb.position.x < -2.4f)
+            if (rb.position.x < -2.23f)
             {
-                player.position = new Vector3(-2.4f, rb.position.y, 0);
+                player.position = new Vector3(-2.23f, rb.position.y, 0);
             }
             rb.MovePosition(rb.position + Vector2.right * moveX * speed * Time.deltaTime);
         }

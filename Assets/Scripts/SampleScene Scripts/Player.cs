@@ -2,7 +2,7 @@
 
 public class Player : MonoBehaviour
 {
-    public GameObject restart, mainMenu;
+    public GameObject restart, mainMenu, platformMenu, currentText;
     public static bool lose = false;
 
     void Awake()
@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
             lose = true;
             restart.SetActive(true);
             mainMenu.SetActive(true);
+            platformMenu.SetActive(true);
+            //currentText.SetActive(true);
         }
     }
 }
